@@ -1,0 +1,69 @@
+/* =================================
+  Base Elements
+==================================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #3a3a3a;
+  margin: 0;
+  background-color: #b6edd8;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+
+/*Image Gallery*/
+.grid {
+  margin: 1rem auto;
+  max-width: 100%;
+  padding: 3rem;
+  text-align: center;
+}
+
+.cell {
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.cell img {
+  vertical-align: middle;
+  border: 5px solid #eee;
+  border-radius: 5px;
+  transition: all 1s ease;
+}
+
+.cell img:hover {
+  filter: brightness(60%);
+}
+
+
+/* =================================
+  Media Queries
+==================================== */
+@media screen and (min-width: 768px) {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .cell {
+    width: calc(33.3333% - 2rem);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .cell {
+    width: calc(25% - 2rem);
+  }
+}
