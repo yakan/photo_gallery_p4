@@ -57,6 +57,11 @@ img {
   filter: brightness(60%);
 }
 
+.copyright {
+  margin-bottom: 3em;
+  text-align: center;
+  font-weight: bold;
+}
 
 /* =================================
   Media Queries
